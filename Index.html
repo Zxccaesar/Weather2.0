@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точный прогноз погоды в Астане</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Прогноз погоды в Астане</h1>
+        <div class="subtitle">Актуальные метеоданные</div>
+    </div>
+
+    <div class="weather-card">
+        <div id="currentWeather">
+            <div class="loading-container">
+                <div class="loader"></div>
+                <p>Получаем актуальные данные...</p>
+            </div>
+        </div>
+
+        <div class="hourly-forecast">
+            <h3>Почасовой прогноз</h3>
+            <div id="hourlyWeather">
+                <div class="loading-container">
+                    <div class="loader" style="width: 30px; height: 30px;"></div>
+                    <p>Загружаем прогноз...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-updated" id="lastUpdated"></div>
+        <div class="data-source">Данные предоставлены Open-Meteo.com</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
